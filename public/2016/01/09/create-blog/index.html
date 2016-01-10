@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>博客浅谈 - Jade Gong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="开始(Start)早在很久以前（三四个月吧），我就已经从DigitalOcean购买了虚拟主机（vps），准备搭建自己的个人网站兼博客系统。谁知即将毕业，这个事情便自从开发了一个框架之后就一直搁置了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客浅谈">
+<meta property="og:url" content="http://yoursite.com/2016/01/09/create-blog/index.html">
+<meta property="og:site_name" content="Jade Gong">
+<meta property="og:description" content="开始(Start)早在很久以前（三四个月吧），我就已经从DigitalOcean购买了虚拟主机（vps），准备搭建自己的个人网站兼博客系统。谁知即将毕业，这个事情便自从开发了一个框架之后就一直搁置了。">
+<meta property="og:updated_time" content="2016-01-09T14:38:55.173Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客浅谈">
+<meta name="twitter:description" content="开始(Start)早在很久以前（三四个月吧），我就已经从DigitalOcean购买了虚拟主机（vps），准备搭建自己的个人网站兼博客系统。谁知即将毕业，这个事情便自从开发了一个框架之后就一直搁置了。">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="https://www.jadegong.com.cn"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">归档</a>
+        
+          <a class="main-nav-link" href="/categories">分类</a>
+        
+          <a class="main-nav-link" href="/tags">标签</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-create-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      博客浅谈
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/01/09/create-blog/" class="article-date">
+  <time datetime="2016-01-09T14:01:55.000Z" itemprop="datePublished">2016-01-09</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tech/">tech</a>
+  </div>
+
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://yoursite.com/2016/01/09/create-blog/#disqus_thread" class="article-comment-link">评论</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="u5F00_u59CB_28Start_29"><a href="#u5F00_u59CB_28Start_29" class="headerlink" title="开始(Start)"></a>开始(Start)</h2><p>早在很久以前（三四个月吧），我就已经从<a href="https://www.digitalocean.com" target="_blank" rel="external">DigitalOcean</a>购买了虚拟主机（vps），准备搭建自己的个人网站兼博客系统。谁知即将毕业，这个事情便自从开发了一个框架之后就一直搁置了。<a id="more"></a>直到室友将个人博客搭建完毕，并给我介绍了一个框架<a href="https://hexo.io" target="_blank" rel="external">Hexo</a>，我才开始设计自己的网站，<a href="https://hexo.io" target="_blank" rel="external">Hexo</a>的一个非常好的地方便是框架完全搭建好了，并且带有许多高手开发的主题可供选择。如果对主题不甚满意，也可以自己修改主题的源代码(并不需要很牛的技术)。<a href="https://hexo.io" target="_blank" rel="external">Hexo</a>采用npm进行构建，模板采用<a href="http://http://www.embeddedjs.com/" target="_blank" rel="external">EJS</a>，css预处理采用<a href="http://stylus-lang.com" target="_blank" rel="external">Stylus</a>，技术很简单大众。于是我便着手构建网站，但苦于毕业出路问题，一直未曾静下心来完成这件事儿，知道上述事情不再困扰我，我便用了几天时间自己搭建出了博客系统。当然我肯定对源代码进行了小小地修改，以满足我的三观需求(虽然并没有什么×用^-^)！好吧，我采用的主题为<a href="https://github.com/ppoffice/hexo-theme-minos" target="_blank" rel="external">Minos</a>。以下为具体过程。</p>
+<h2 id="u540E_u671F_28Later_29"><a href="#u540E_u671F_28Later_29" class="headerlink" title="后期(Later)"></a>后期(Later)</h2><h3 id="u914D_u7F6E_28Configuration_29"><a href="#u914D_u7F6E_28Configuration_29" class="headerlink" title="配置(Configuration)"></a>配置(Configuration)</h3><p>博客搭建其实到此已经非常明了，<a href="https://hexo.io" target="_blank" rel="external">Hexo</a>官方文档非常齐全，不用担心技术问题。其实主要问题还是主题的文档有些不太全面，不过看看模板文件应该也还可以明白(吧？)。其实还有一个问题，那边是文章里的评论系统。室友一开始使用<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>，可这货不是https，导致博客中具有评论功能的页面提示不安全(强迫症程序猿怎么能够容忍`=‘)，所以我便用了<a href="https://disqus.com" target="_blank" rel="external">Disqus</a>，配置只需要在根目录加上disqus_shortname字段为你的shortname即可。</p>
+<h3 id="SSL"><a href="#SSL" class="headerlink" title="SSL"></a>SSL</h3><p>SSL现在是主流，所以不配一把怎么可以(蛋疼ing)。主要参考这篇文章<a href="https://s.how/nginx-ssl/" target="_blank" rel="external">Nginx 配置 SSL 证书 + 搭建 HTTPS 网站教程</a>，写得很详细，我就不多说了，不过其中有一点，那就是强制add-header使用https进行访问似乎没什么用(我和室友这里都没什么用^-^)。</p>
+<h2 id="u6700_u540E_28At_last_29"><a href="#u6700_u540E_28At_last_29" class="headerlink" title="最后(At last)"></a>最后(At last)</h2><p>最后的最后，没了，自己发布吧！</p>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/扯淡/">扯淡</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Jade Gong&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'httpsblogjadegongcomcn';
+  
+  var disqus_url = 'http://yoursite.com/2016/01/09/create-blog/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+  </div>
+</body>
+</html>

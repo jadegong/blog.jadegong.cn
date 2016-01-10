@@ -1,0 +1,20 @@
+# Header
+logo_text: # Add text logo instead of logo image
+menu:
+  首页: /
+  归档: archives
+  分类: categories
+  标签: tags
+  关于: about
+
+# Content
+excerpt_link: Read More
+toc: false #  Whether to show the table of contents in articles
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.ico
+
+# Comment
+# disqus_shortname: httpsblogjadegongcomcn
