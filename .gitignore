@@ -2,3 +2,5 @@ node_modules/*
 public/*
 db.json
 debug.log
+npm-debug.log
+.idea/*
