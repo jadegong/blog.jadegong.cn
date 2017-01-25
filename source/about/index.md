@@ -13,8 +13,8 @@ Hello everyone! I'm Jade Gong from Beijing and living by coding web.
 
 ## 信息页(Links)
 
-Github：[https://github.com/jadegong](https://github.com/jadegong)  
-个人主页(Website)：[www.jadegong.com.cn](https://www.jadegong.com.cn)
+Github：[jadegong](https://github.com/jadegong)  
+个人主页(Website)：[jadegong的个人主页](https://www.jadegong.com.cn)
 
 ## 项目(Projects)
 可信签：[官网](https://trustedsign.com), [平台](https://trustedsign.com/app)  

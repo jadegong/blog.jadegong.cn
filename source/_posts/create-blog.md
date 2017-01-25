@@ -1,7 +1,7 @@
 ---
 title: 博客扯淡
 date: 2016-01-09 22:01:55
-categories: tech
+categories: personal
 tags: 扯淡
 ---
 
@@ -12,10 +12,10 @@ tags: 扯淡
 ## 后期(Later)
    
 ### 配置(Configuration)
-博客搭建其实到此已经非常明了，[Hexo](https://hexo.io)官方文档非常齐全，不用担心技术问题。其实主要问题还是主题的文档有些不太全面，不过看看模板文件应该也还可以明白(吧？)。其实还有一个问题，那边是文章里的评论系统。室友一开始使用[多说](http://duoshuo.com/)，可这货不是https，导致博客中具有评论功能的页面提示不安全(强迫症程序猿怎么能够容忍`=‘)，所以我便用了[Disqus](https://disqus.com)，配置只需要在根目录加上disqus_shortname字段为你的shortname即可。
+博客搭建其实到此已经非常明了，[Hexo](https://hexo.io)官方文档非常齐全，不用担心技术问题。其实主要问题还是主题的文档有些不太全面，不过看看模板文件应该也还可以明白(吧？)。其实还有一个问题，那边是文章里的评论系统。室友一开始使用[多说](http://duoshuo.com/)，可这货不是https，导致博客中具有评论功能的页面提示不安全(强迫症程序猿怎么能够容忍`=‘)，所以我便用了[Disqus](https://disqus.com)，配置只需要在根目录加上disqus_shortname字段为你的short name即可。
 ### SSL
 SSL现在是主流，所以不配一把怎么可以(蛋疼ing)。由于之前的博客https证书有效期只有一年，而且只能单个domain一个证书(毕竟是免费的Orz)，所以寻找了另外一个更加人性化的CA颁发机构[Let's Encrypt](https://letsencrypt.org/)，而且有一个将申请证书的过程自动化：[certbot](https://certbot.eff.org/)。详细的信息网站已经介绍得十分清楚了。
    
 ## 最后(At last)
    
-Have a nice day!s
+Have a nice day!
