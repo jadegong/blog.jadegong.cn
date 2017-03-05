@@ -7,7 +7,7 @@ tags: 扯淡
 
 ## 开始(Start)
 
-早在很久以前（2015年），我就已经从[DigitalOcean](https://www.digitalocean.com)购买了虚拟主机（vps），准备搭建自己的个人网站兼博客系统。谁知即将毕业，这个事情便自从开发了一个框架之后就一直搁置了。<!-- more -->直到室友将个人博客搭建完毕，并给我介绍了一个框架[Hexo](https://hexo.io)，我才开始设计自己的网站，[Hexo](https://hexo.io)的一个非常好的地方便是框架完全搭建好了，并且带有许多高手开发的主题可供选择。如果对主题不甚满意，也可以自己修改主题的源代码(并不需要很牛的技术)。[Hexo](https://hexo.io)采用npm进行构建，模板采用[EJS](http://http://www.embeddedjs.com/)，css预处理采用[Stylus](http://stylus-lang.com)，技术很简单大众。于是我便着手构建网站，但苦于毕业出路问题，一直未曾静下心来完成这件事儿，知道上述事情不再困扰我，我便用了几天时间自己搭建出了博客系统。当然我肯定对源代码进行了小小地修改，以满足我的三观需求(虽然并没有什么×用^-^)！好吧，我采用的主题为[Minos](https://github.com/ppoffice/hexo-theme-minos)。以下为具体过程。
+早在很久以前（2015年），我就已经从[DigitalOcean](https://www.digitalocean.com)购买了虚拟主机（现在已经切换到[vultr](https://vultr.com)了），准备搭建自己的个人网站兼博客系统。谁知即将毕业，这个事情便自从开发了一个框架之后就一直搁置了。<!-- more -->直到室友将个人博客搭建完毕，并给我介绍了一个框架[Hexo](https://hexo.io)，我才开始设计自己的网站，[Hexo](https://hexo.io)的一个非常好的地方便是框架完全搭建好了，并且带有许多高手开发的主题可供选择。如果对主题不甚满意，也可以自己修改主题的源代码(并不需要很牛的技术)。[Hexo](https://hexo.io)采用npm进行构建，模板采用[EJS](http://http://www.embeddedjs.com/)，css预处理采用[Stylus](http://stylus-lang.com)，技术很简单大众。于是我便着手构建网站，但苦于毕业出路问题，一直未曾静下心来完成这件事儿，知道上述事情不再困扰我，我便用了几天时间自己搭建出了博客系统。当然我肯定对源代码进行了小小地修改，以满足我的三观需求(虽然并没有什么×用^-^)！好吧，我采用的主题为[Minos](https://github.com/ppoffice/hexo-theme-minos)。以下为具体过程。
    
 ## 后期(Later)
    
