@@ -1,0 +1,23 @@
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+banner: /images/back.jpg
+subtitle: From China
+
+# Content
+excerpt_link: Read More
+fancybox: true
+recent_posts_limits: 5
+# Footer
+copyright: |-
+  Visit My <a href="https://github.com/jadegong" target="_blank">Github</a></br>
+
+# Sidebar
+# sidebar: right
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.ico
+twitter:
