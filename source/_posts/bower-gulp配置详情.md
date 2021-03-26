@@ -20,7 +20,7 @@ bower install --save angular=angularjs-ie8-build#1.4.7
 }
 ```
 <!-- more -->
-##overrides
+## overrides
 当依赖包没有指定主要的文件（需要使用）时，可以通过配置overrides来实现。例如bootstrap：
 ```json
 {

@@ -1,5 +1,5 @@
 {
-  "name": "hexo-site",
+  "name": "blog.jadegong.cn",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.3.0"
+    "version": "5.4.0"
   },
   "dependencies": {
     "hexo": "^5.0.0",
