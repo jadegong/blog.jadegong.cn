@@ -45,5 +45,5 @@ i3lock -i /tmp/screenshotblur.png
 以上的配置基本上都可以从github或者其他网站找到，推荐[j4tools](https://www.j4tools.org/)，i3的大多数配置都有效果不错的源码。   
 最后，上一张我配置好的图，我的配置文件地址：[https://github.com/jadegong/dotfiles](https://github.com/jadegong/dotfiles)   
    
-![](http://7xnyb9.com1.z0.glb.clouddn.com/screenfetch.png)
+![](https://raw.githubusercontent.com/jadegong/dotfiles/master/screenFetch-2020-12-11_13-57-07.png)
 
