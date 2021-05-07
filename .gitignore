@@ -5,3 +5,5 @@ debug.log
 npm-debug.log
 .idea/*
 package-lock.json
+blog.jadegong.cn/*
+blog.jadegong.cn.*
