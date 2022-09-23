@@ -33,7 +33,7 @@ tags: [workflow,vim,emacs]
 我最近几年使用 vim 作为主要的文本编辑器，进行文本处理工作。网上很多人说 vim 的快捷键很难学，其实是他们夸大了其难度，只是因为 vim 与我们从小接触的快捷键方式不同，所以觉得很难。官方教程 vimtutor 只需要半个小时就能完整过一遍，学完就会最基本的 vim 操作了。甚至会有人觉得文本编辑器居然要学？试想小时候使用 windows 也需要学习吧，学习难度并不低(至少我本人是这么觉得的)，很多人忘了 windows 也需要学习。
 
 vim 的操作方式完全符合上述基本原则：
-1. 双手基本都保持在主键盘区域，快捷键也比较少使用功能键组合，最典型的例子就是自定义 <leader> 按键(我将其定义为空格键)，不需要一直按住，只需要快速按两个键，就能实现基本功能(比如在vim启动目录中搜索，先后按下 <space>sr,即可使用rg进行搜索)；
+1. 双手基本都保持在主键盘区域，快捷键也比较少使用功能键组合，最典型的例子就是自定义 \<leader\> 按键(我将其定义为空格键)，不需要一直按住，只需要快速按两个键，就能实现基本功能(比如在vim启动目录中搜索，先后按下 \<space\>sr,即可使用rg进行搜索)；
 2. 很多编辑器都支持插件，基本所有编辑器都有 vim 按键插件，可以随处使用，系统操作方式见下文；
 3. vim 快捷键符合基本的语言特定，动词、介词、数词、名词，只要你学过一门语言，就很容易理解其快捷键方式；
 4. vim 完全支持自定义功能，包括快捷键；
@@ -58,7 +58,44 @@ vim 的操作方式完全符合上述基本原则：
 文本操作可以使用数据统计常用的操作，vim 目前没有相关插件，emacs 有插件 [keyfreq](https://github.com/dacap/keyfreq) 统计各个快捷键的使用频率，根据此优化你的文本处理。也可以在日常使用时留意不是很高效的处理，随时关注如何优化文本处理流程。
 
 本人 emacs 的使用统计：
-![](https://raw.githubusercontent.com/jadegong/dotfiles/master/emacs_keyfreq_statistics.png)
+```shell
+For all major modes:
+
+    525    9.89%  markdown-outdent-or-delete                     
+    377    7.10%  evil-backward-word-begin                       b
+    307    5.78%  helm-next-line                                 
+    288    5.42%  evil-forward-word-begin                        w
+    259    4.88%  evil-normal-state                              
+    200    3.77%  evil-scroll-down                               C-d
+    160    3.01%  evil-window-middle                             M
+    139    2.62%  evil-ex-search-next                            n
+    130    2.45%  helm-previous-line                             
+    118    2.22%  term-send-raw                                  
+    109    2.05%  evil-forward-word-end                          e
+    106    2.00%  evil-repeat                                    .
+    100    1.88%  save-buffer                                    SPC f s, M-m f s, C-x C-s
+     81    1.53%  evil-window-right                              SPC w <right>, SPC w l
+     80    1.51%  markdown-enter-key                             
+     73    1.37%  evil-window-left                               SPC w <left>, SPC w h
+     69    1.30%  ignore                                         <triple-mouse-3>, <triple-mouse-2>
+     69    1.30%  keyboard-escape-quit                           M-ESC ESC
+     67    1.26%  term-send-backspace                            
+     66    1.24%  spacemacs/helm-find-files-windows              
+     64    1.21%  spacemacs/kill-this-buffer                     SPC b d, M-m b d
+     62    1.17%  delete-backward-char                           
+     60    1.13%  evil-delete-backward-word                      
+     60    1.13%  evil-open-below                                o
+     57    1.07%  evil-undo                                      u
+     56    1.05%  evil-scroll-line-down                          C-e
+     49    0.92%  winum-select-window-2                          SPC 2, M-m 2, M-2, C-x w 2
+     48    0.90%  lazy-helm/spacemacs/helm-find-files            SPC f f, M-m f f
+     48    0.90%  evil-append                                    a
+     46    0.87%  forward-char                                   
+     46    0.87%  evil-append-line                               A
+     44    0.83%  evil-visual-char                               v
+     44    0.83%  backward-char                                  
+     43    0.81%  spacemacs/evil-mc-paste-after                  p, <normal-state> p
+```
 可以看到我大量使用 w 和 b 进行行内移动，这种操作方式比较低效，可以使用 f/F 操作来进行优化，这只是一个简单的示例。
 
 比如使用 zsh_stats 来查看命令行使用频率：
