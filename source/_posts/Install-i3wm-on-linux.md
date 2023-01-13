@@ -19,8 +19,8 @@ sudo apt install i3
 ## 配置
 其中[i3wm](http://i3wm.org/)(以下简称i3)是其中一个用户比较多的window manager，关于i3的介绍官网很详细，并且每一个配置也十分详细。一般来说，第一次进入i3桌面，需要让你设置$Mod键，根据个人习惯选择super(windows图标，mac键盘不清楚- _ -!)或者alt键；并且会生成默认的配置文件。你可以使用如下命令创建一个自己的配置文件：
 ```
-sudo cp /etc/i3/config ~/.config/i3/config  #拷贝默认配置文件至自己的i3配置目录中
-sudo chmod 666 ~/.config/i3/config  #使配置文件可编辑
+sudo cp /etc/i3/config ~/.config/i3/config  # 拷贝默认配置文件至自己的i3配置目录中
+sudo chmod 666 ~/.config/i3/config  # 使配置文件可编辑
 ```
 然后可以编辑配置文件，主要根据[官网文档](http://i3wm.org/docs/userguide.html)或者github上的很多配置自己按需查看。
 
@@ -43,7 +43,7 @@ rm /tmp/screenshot.png
 i3lock -i /tmp/screenshotblur.png
 ```
 ### 其他配置
-当然，你可以使用feh配置背景图，nm-applet进行网络设置，volumeicon进行声音设置，xfce4-power-manager进行电源管理，使用compton设置背景透明度。
+你可以使用feh配置背景图，nm-applet进行网络设置，volumeicon进行声音设置，xfce4-power-manager进行电源管理，使用compton设置背景透明度，使用blueberry管理蓝牙设备。
 以上的配置基本上都可以从github或者其他网站找到，推荐[j4tools](https://www.j4tools.org/)，i3的大多数配置都有效果不错的源码。
 最后，上一张我配置好的图，我的配置文件地址：[https://github.com/jadegong/dotfiles](https://github.com/jadegong/dotfiles)
 
