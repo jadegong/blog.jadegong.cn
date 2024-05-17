@@ -13,6 +13,7 @@ ChatGPT?
 可以进行简单的对话，短文本支持，长文本和上下文对话能力比较差。  
 中期：各种语音助手，Siri，小度，小爱音响  
 当前：ChatGPT，文心一言，车载语音助手，copilot等  
+<!-- more -->
 AI带来的经济收益  
 OpenAI: 市值在10个月内翻三倍，达800亿美元。  
 芯片行业：NVIDIA: 近两年成为第七个市值挺进万亿美元的公司，2023年更是突破2万亿美元，成为全球第三大市值上市公司，仅次于微软和苹果。  
@@ -196,6 +197,6 @@ pip install -e .
 ```shell
 python src/train_web.py
 ```
-浏览器中查看体验：[10.77.23.17:7860](http://10.77.23.17:7860)  
+浏览器中查看体验：[localhost:7860](http://localhost:7860)  
 大模型path：`/datad/llm/models/google/gemma-2b-it`  
 
