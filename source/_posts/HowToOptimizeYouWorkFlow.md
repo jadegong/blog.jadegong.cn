@@ -1,6 +1,6 @@
 ---
 title: 如何优化你的工作流
-date: 2022-09-21 17:52:15
+date: 2024-06-17 15:52:15
 categories: tech
 tags: [workflow,vim,emacs]
 ---
@@ -61,40 +61,38 @@ vim 的操作方式完全符合上述基本原则：
 ```shell
 For all major modes:
 
-    525    9.89%  markdown-outdent-or-delete                     
-    377    7.10%  evil-backward-word-begin                       b
-    307    5.78%  helm-next-line                                 
-    288    5.42%  evil-forward-word-begin                        w
-    259    4.88%  evil-normal-state                              
-    200    3.77%  evil-scroll-down                               C-d
-    160    3.01%  evil-window-middle                             M
-    139    2.62%  evil-ex-search-next                            n
-    130    2.45%  helm-previous-line                             
-    118    2.22%  term-send-raw                                  
-    109    2.05%  evil-forward-word-end                          e
-    106    2.00%  evil-repeat                                    .
-    100    1.88%  save-buffer                                    SPC f s, M-m f s, C-x C-s
-     81    1.53%  evil-window-right                              SPC w <right>, SPC w l
-     80    1.51%  markdown-enter-key                             
-     73    1.37%  evil-window-left                               SPC w <left>, SPC w h
-     69    1.30%  ignore                                         <triple-mouse-3>, <triple-mouse-2>
-     69    1.30%  keyboard-escape-quit                           M-ESC ESC
-     67    1.26%  term-send-backspace                            
-     66    1.24%  spacemacs/helm-find-files-windows              
-     64    1.21%  spacemacs/kill-this-buffer                     SPC b d, M-m b d
-     62    1.17%  delete-backward-char                           
-     60    1.13%  evil-delete-backward-word                      
-     60    1.13%  evil-open-below                                o
-     57    1.07%  evil-undo                                      u
-     56    1.05%  evil-scroll-line-down                          C-e
-     49    0.92%  winum-select-window-2                          SPC 2, M-m 2, M-2, C-x w 2
-     48    0.90%  lazy-helm/spacemacs/helm-find-files            SPC f f, M-m f f
-     48    0.90%  evil-append                                    a
-     46    0.87%  forward-char                                   
-     46    0.87%  evil-append-line                               A
-     44    0.83%  evil-visual-char                               v
-     44    0.83%  backward-char                                  
-     43    0.81%  spacemacs/evil-mc-paste-after                  p, <normal-state> p
+  62307    9.39%  evil-forward-word-begin                                                              w
+  55557    8.37%  evil-normal-state                                                                    
+  45172    6.81%  evil-backward-word-begin                                                             b
+  32033    4.83%  evil-delete-backward-char-and-join                                                   
+  24040    3.62%  evil-ex-search-next                                                                  n
+  19654    2.96%  save-buffer                                                                          SPC f s, M-m f s, C-x C-s, <menu-bar> <file> <save-buffer>
+  18872    2.84%  evil-change                                                                          
+  18826    2.84%  evil-repeat                                                                          
+  17920    2.70%  evil-window-right                                                                    SPC w <right>, SPC w l, C-w C-<right>, C-w C-l, C-w <right>, C-w l, M-m w <right>, M-m w l
+  17256    2.60%  evil-window-left                                                                     SPC w <left>, SPC w h, C-w C-<left>, C-w C-h, C-w <left>, C-w h, M-m w <left>, M-m w h
+  17213    2.59%  evil-scroll-line-down                                                                C-e
+  16042    2.42%  evil-forward-word-end                                                                e
+  14987    2.26%  helm-next-line                                                                       
+  13888    2.09%  evil-open-below                                                                      
+  13081    1.97%  evil-delete                                                                          
+  12971    1.95%  exit-minibuffer                                                                      
+  11979    1.81%  evil-window-middle                                                                   M
+  11108    1.67%  evil-scroll-down                                                                     C-d
+  10495    1.58%  spacemacs/evil-mc-paste-after                                                        
+  10208    1.54%  evil-yank                                                                            y
+  10079    1.52%  evil-append                                                                          
+   9980    1.50%  evil-goto-first-line                                                                 g g
+   8773    1.32%  recenter-top-bottom                                                                  C-l
+   8559    1.29%  evil-end-of-line                                                                     <end>, $
+   7765    1.17%  evil-delete-backward-word                                                            
+   7064    1.06%  newline-and-indent                                                                   
+   6912    1.04%  evil-undo                                                                            
+   6841    1.03%  spacemacs/helm-find-files-windows                                                    
+   6772    1.02%  company-complete-selection                                                           
+   6707    1.01%  lazy-helm/spacemacs/helm-find-files                                                  SPC f f, M-m f f
+   6612    1.00%  evil-ex-search-forward                                                               /
+   6538    0.99%  evil-scroll-up                                                                       C-u
 ```
 可以看到我大量使用 w 和 b 进行行内移动，这种操作方式比较低效，可以使用 f/F 操作来进行优化，这只是一个简单的示例。
 
