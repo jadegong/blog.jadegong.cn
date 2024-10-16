@@ -2,9 +2,8 @@
 title: AI浅谈及如何手动搭建本地大模型
 date: 2024-05-17 11:02:53
 categories: tech
-tags: [AI,linux, 大模型]
+tags: [AI,linux,大模型,LLM]
 ---
-# AI浅谈及如何手动搭建本地大模型
 ## 背景介绍
 1. AI是什么？  
 ChatGPT?

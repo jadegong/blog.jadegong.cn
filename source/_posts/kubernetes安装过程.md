@@ -40,7 +40,7 @@ k8s.gcr.io/coredns/coredns:v1.8.0
 - 在master节点进行k8s的初始化，使用命令`kubeadm init --kubernetes-version=v1.21.0 --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=192.168.56.5`，其中kubernetes-version参数改为你本地安装的k8s版本，--pod-network-cidr参数取决于你要使用的网络插件，这里我使用的是flannel，所以地址为这个，--apiserver-advertise-address参数指向master节点的地址；
 - 这一步骤如果出错了，解决了错误之后，需要执行`kubeadm reset`重置，然后再执行init命令；
 - 执行init成功后，会提示进行一些操作，`mkdir -p $HOME/.kube`，`sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config`，`sudo chwon $(id -u):$(id -g) $HOME/.kube/config`，三条命令；执行完成后可以通过`kubectl get nodes`查看当前的所有节点，目前只有master节点；通过执行`kubectl get pods --all-namespaces`查看所有的pods，可以看到coredns还处于pending状态，因为没有安装网络插件；
-- 执行`kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`安装网络插件，这里也可以将配置文件下载至本地，然后执行；在这里会生成一个pod，kube-flannel-ds-amd64-***啥的，可以通过`kubectl get pods --all-namespaces`查看，这里如果无法访问外网会卡住，因为会下载一个镜像包，通过`kubectl describe pods kube-flannel-ds-amd64-[ID] -n kube-system`查看具体情况和镜像包名为 quay.io/coreos/flannel:v0.14.0-rc,版本号因人而异，在能连接外网的电脑上下载该镜像包并导出，然后导入到三台虚拟机的docker里；
+- 执行`kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`安装网络插件，这里也可以将配置文件下载至本地，然后执行；在这里会生成一个pod，kube-flannel-ds-amd64-\*\*\*啥的，可以通过`kubectl get pods --all-namespaces`查看，这里如果无法访问外网会卡住，因为会下载一个镜像包，通过`kubectl describe pods kube-flannel-ds-amd64-[ID] -n kube-system`查看具体情况和镜像包名为 quay.io/coreos/flannel:v0.14.0-rc ,版本号因人而异，在能连接外网的电脑上下载该镜像包并导出，然后导入到三台虚拟机的docker里；
 - 这个时候apply命令就会自动执行成功了，不用再次执行。
 master节点初始化完成。
 ## 添加node节点
