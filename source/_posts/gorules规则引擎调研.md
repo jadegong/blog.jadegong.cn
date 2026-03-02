@@ -858,7 +858,8 @@ use futures;
 use std::sync::Arc;
 use tracing::error;
 use zen_engine::model::DecisionContent;
-use zen_engine::{Decision, DecisionEngine, DecisionGraphResponse, EvaluationOptions, Variable};
+use zen_engine::{Decision, DecisionEngine, DecisionGraphResponse, EvaluationOptions, EvaluationTraceKind, Variable};
+use serde_json::value::Serializer as JsonSerializer;
 
 /**
  * Decision 是不可 Send 的，导致出现 sync 相关的错误
@@ -900,8 +901,10 @@ pub fn rules_evaluate_blocking(
             })
         }),
         Err(e) => {
-            // 因为 EvaluationError 实现了 Serialize，直接转换为 Value
-            let error_value = serde_json::to_value(&e)
+            // 因为 EvaluationError 实现了 Serialize，手动转换为 Value
+            let mode = EvaluationTraceKind::Default;
+            let eval_err = *e;
+            let error_value = eval_err.serialize_with_mode(JsonSerializer, mode)
                 .unwrap_or_else(|_| serde_json::json!({ "type": "InternalError", "source": "Failed to serialize EvaluationError" }));
             error!("evaluate process error");
             Err(error_value)
