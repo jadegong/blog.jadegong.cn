@@ -50,6 +50,30 @@ tags: [linux]
 *   **代码编辑器**：
     *   鉴于鼠标操作易导致手腕劳损，且人手操作鼠标不如键盘快捷键精准，我主要使用 [neovim](https://neovim.io/) 和 [spacemacs](https://www.spacemacs.org/)。
     *   尤其是 Spacemacs，其默认的快捷键体系成熟合理，极大地提升了纯键盘操作的效率。
+*   **游戏**：
+    *   **Steam**：[Steam](https://store.steampowered.com) 原生支持 linux，并且可以设置兼容层 wine/proton；
+    *   **wine/proton配置**：通过 winetricks/protontricks 配置具体的 Steam 游戏兼容性及运行库（Mod 支持）；
+    *   **游戏管理平台**：[Lutris](https://lutris.net) 可以管理多种应用程序，包括 wine 运行程序，可以对每个程序进行单独的设置，且可以通过配置支持Mod；
+    *   **游戏管理平台**：[Heroic](https://heroicgameslauncher.com/) 也可以管理程序，而且支持 Epic 和 GOG；
+    *   **Mangohud**：[Mangohud](https://mangohud.com) 支持游戏表现 HUD 显示，像 Msi After Burner 效果，并且可以通过 [Goverlay](https://github.com/benjamimgois/goverlay) 实时直观配置；
+
+## 常用软件表格
+| Usage | Software | Desc |
+| ----- | -------- | ---- |
+| OS    | Archlinux |     |
+| Display Manager | lightdm |     |
+| WM    | Hyprland |     |
+| Launcher | fuzzel |     |
+| Browser | Vivaldi |     |
+| Terminal | foot |     |
+| shell | fish |     |
+| File Manager | Thunar |     |
+| Status Bar | waybar |     |
+| Windows Compatibility | wine/proton-ge | Execute windows softwares |
+| wine/proton config | winetricks/protontricks |  |
+| Games Manager | lutris/heroic |  |
+| Games Hud | MangoHud |  |
+| Games Hud Config | Goverlay | Config MangoHud |
 
 ## 最后
 
