@@ -23,6 +23,8 @@ A: 使用 DecisionGraph 时，不实时绑定 value 值，仅绑定 defaultValue
 ## 二、系统问题
 - clash verge服务安装问题：打开 clash-verge-rev 无法加载配置文件，一般在升级后出现；  
 解决方法：在命令行执行：`sudo clash-verge-service-uninstall` 和 `sudo clash-verge-service-install` 手动重装服务。  
+- libraw更新后nomacs打开报错问题：nomacs: error while loading shared libraries: libraw.so.24；  
+解决方法：`sudo ln -s /usr/lib/libraw.so.25.0.0 /usr/lib/libraw.so.24`，创建一个软链接。  
 
 ## 三、rust问题
 

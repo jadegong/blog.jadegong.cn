@@ -71,6 +71,7 @@ tags: [linux]
 | Status Bar | waybar |     |
 | Windows Compatibility | wine/proton-ge | Execute windows softwares |
 | wine/proton config | winetricks/protontricks |  |
+| proton version control | protonup-qt | Install other versions of proton, like proton-cachyos etc. |
 | Games Manager | lutris/heroic |  |
 | Games Hud | MangoHud |  |
 | Games Hud Config | Goverlay | Config MangoHud |
